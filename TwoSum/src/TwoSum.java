@@ -1,5 +1,5 @@
 //Jimmy Zhang LeetCode Problem 1. TwoSum 10/12/2021
-// Add a what did you learn section!
+// Add a what did you learn section
 
 import java.util.HashMap;
 import java.util.Map;
