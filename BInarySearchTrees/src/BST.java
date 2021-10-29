@@ -55,6 +55,7 @@ class BinarySearchTree {
     public static int rangeSumBST(Node root, int L, int R) {
         Stack<Node> stk = new Stack<>();
         stk.push(root);
+        System.out.println("stk: "+ stk);
         int sum = 0;
         while (!stk.isEmpty()) {
             Node n = stk.pop();
