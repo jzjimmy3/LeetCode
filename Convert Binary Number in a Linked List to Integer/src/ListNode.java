@@ -1,5 +1,3 @@
-
-
 public class ListNode {
     int val;
     ListNode current = null;
@@ -36,10 +34,10 @@ public class ListNode {
     public int getDecimalValue(){
         int ans = 0;
         while(head != null){
-            ans = (ans << 1) | head.val;
+            ans = ans << 1 | head.val;
+            System.out.println(ans);
             head = head.next;
         }
-        System.out.println(ans);
         return ans;
     }
 //    public static void print(ListNode node){
@@ -54,13 +52,18 @@ public class ListNode {
             System.out.println("The Current Node is " + curr.val);
             curr = curr.next;
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
         ListNode newBinary = new ListNode();
+        int[] newBinaryArr = new int[]{1,0,1};
         newBinary.add(1);
         newBinary.add(0);
+        newBinary.add(0);
         newBinary.add(1);
+        newBinary.add(0);
+        newBinary.add(0);
         newBinary.print();
         newBinary.getDecimalValue();
     }
